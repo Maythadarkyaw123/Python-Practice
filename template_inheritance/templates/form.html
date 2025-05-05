@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{%block title%} Form Page {%endblock%}
+
+{%block content%}
+    <h2>Enter your name</h2>
+    <form action="/welcome" method="POST">
+        <input type="text" name="name" required>
+        <input type="submit" value="Submit">
+    </form>
+{%endblock%}
