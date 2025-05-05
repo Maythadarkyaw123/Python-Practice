@@ -8,8 +8,8 @@ def form():
 
 @app.route("/welcome", methods = ['POST'])
 def welcome():
-    name = request.form['name']
-    return render_template("welcome.html", name = name)
+    Name = request.form['name']  # name is a form attribute
+    return render_template("welcome.html", name = Name)
 
 if __name__ == "__main__":
     app.run()
